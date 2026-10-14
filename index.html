@@ -299,7 +299,7 @@
         <div class="box-selector">
             <label for="box-count">Número de Caixinhas:</label>
             <input type="number" id="box-count" value="1" min="1" onchange="updateCalculations(true)">
-            <div class="box-price-tag">🏷️ R$ 12,00 / caixinha</div>
+            <div class="box-price-tag">🏷️ R$ 15,00 / caixinha</div>
             <div class="box-rule-badge" id="box-rule-desc">
                 📦 1 caixinha = 4 brigadeiros necessários
             </div>
@@ -429,7 +429,7 @@
     <div class="summary-bar">
         <div class="summary-info">
             <p>Selecionados: <span id="total-selected" class="highlight">0</span> / <span id="required-items" class="highlight">4</span> brigadeiros</p>
-            <p>💰 Total: <span id="total-price" class="price-highlight">R$ 12,00</span></p>
+            <p>💰 Total: <span id="total-price" class="price-highlight">R$ 15,00</span></p>
             <p>🎁 Brindes conquistados: <span id="free-items" class="gift-highlight">0</span> unidade(s) grátis!</p>
         </div>
         <button id="order-btn" class="btn-order" onclick="sendOrder()" disabled>Enviar Pedido no WhatsApp</button>
@@ -437,7 +437,7 @@
 
     <script>
         const WHATSAPP_NUMBER = "5519998293654";
-        const BOX_PRICE = 12.00;
+        const BOX_PRICE = 15.00;
 
         const items = {
             ninho: { name: "Ninho com Nutella", qty: 0 },
